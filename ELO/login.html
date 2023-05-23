@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <main class="main-login">
+        <div class="login-box">
+            <div class="login-row">
+                <div class="login-bg"></div>
+                <section class="login-section">
+                    <div class="login-box">
+                        <div class="container-row">
+                            <div class="container-col">
+                                <div class="container-row">
+                                    <div class="box">
+                                        <div class="card">
+                                            <h1 class="text-title">
+                                                <a href="index.html">
+                                                    <img src="images/logo.png" alt="">
+                                                </a>
+                                                <a href="" class="closeDiv" title="close window"><i class="fal fa-xmark-large"></i></a>
+                                            </h1>
+                                            <div class="clear"></div>
+                                            <div class="divLogin">
+                                                <form action method="post" class="loginForm" id="loginForm" novalidate="novalidate">
+                                                    <div class="input-box">
+                                                        <div class="input">
+                                                            <span class="txtClass">
+                                                                <i class="fa fa-user"></i>
+                                                            </span>
+                                                            <input type="text" class="inputLogin txtClass form-control" id="user-email" placeholder="Enter Email ID / Phone Number ">
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-box">
+                                                        <div class="input">
+                                                            <span class="txtClass">
+                                                                <i class="fa fa-key"></i>
+                                                            </span>
+                                                            <span class="togglePassword" style="text-align:right;">
+                                                                <i class="fa fa-fw fa-eye-slash"></i>
+                                                            </span>
+                                                            <input type="password" class="inputLogin txtClass form-control" id="user-password" placeholder="Enter Password">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="clear"></div>
+
+                                                    <div class="formCheck">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" id="remember_me" name="chkLanguage" class="login-wrap-checkbox chk-remember">
+                                                            <label class="form-check-label" for="">Remember me</label>
+                                                        </div>
+                                                        <div class="text-primary-hover">
+                                                            <a href="forgotPassword.jsp" class="text-secondary" id="spanForgot">
+                                                                <u><i class="fa fa-user-check"></i> Forgot password?</u>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="clear"></div>
+
+                                                    <div class="loginSubmit">
+                                                        <div class="Submit-btn">
+                                                            <button class="btn-login" type="submit" id="user_login" value="Login" name="user_login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="footerLogin">
+                                                <span>Don't have an account? &nbsp;&nbsp;<a href="signup.jsp" id="spanForgot" class="ps-2"><b><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up</b></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
