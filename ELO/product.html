@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="images/logo.png" alt="">
+        <form class="form-inline mr-auto" target="_self">
+            <div class="form-group">
+                <input class="form-control search-field" type="search" name="search" id="search-field" placeholder="Search">
+                <a href="#" class="sub-search">
+                    <label for="search-field">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </a>
+            </div>
+        </form>
+        <div class="nagivation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa fa-th" aria-hidden="true"></i> Category <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                <li><a href="courses.html"><i class="fa fa-play-circle" aria-hidden="true"></i> Courses</a></li>
+                <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i> eBooks</a></li>
+                <li><a href="Library.html"><i class="fa fa-database" aria-hidden="true"></i> Library</a></li>
+                <li><a href="library.html"><i class="fa fa-edit" aria-hidden="true"></i> Articles</a></li>
+                <div class="btn">
+                    <a href="#" id="login">Log In</a>
+                </div>
+            </ul>
+            
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+        
+    </nav>
+
+
+
+    <section class="product">
+        <div class="container-product">
+            <div class="row-product">
+                <div class="col-product-left">
+                    <img src="images/the-road-to-learn-react2.png" loading="lazy" alt="..." id="display-img" class="card-product">
+                    <div class="minicard">
+                        <div class="colmini">
+                            <a href="" class="view-image active">
+                                <img src="images/the-road-to-learn-react2.png" alt="" class="img-thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-product-right">
+                    <h1>The Road to learn React</h1>
+                    <p class="authur"><small>By: ELO Education</small></p>
+                    <div class="price-card">
+                        VND: <span id="price">200,000 VNĐ</span>
+                        <br>
+                        <span><small><b>Available Stock:</b> <span id="avail">10</span></small></span>
+                    </div>
+                    <div class="star">
+                        <span>(239)</span>
+                        <a class="fa fa-star s1"></a>
+                        <a class="fa fa-star s2"></a>
+                        <a class="fa fa-star s3"></a>
+                        <a class="fa fa-star s4"></a>
+                        <a class="fa fa-star s5"></a>
+                        
+                    </div>
+                    <form action="" id="add-cart">
+                        <div class="extend-card">
+                            <input type="hidden" name="price" value="200000">
+                            <input type="hidden" name="inventory_id" value="6">
+                            <input class="form-control" id="inputQuantity" type="num" value="1 Month" name="quantity">
+                            <button class="btn" type="submit">
+                                <i class="fa fa-credit-card"></i>
+                                Extend
+                            </button>
+                        </div>
+                    </form>
+                    <p class="lead"></p>
+                    <p>
+                        The Road to learn React is a great book for beginners who want to learn React. The book covers it's fundamentals, general concepts, best practices, and shows you how to build a working application with pagination, searching and sorting. It also has extra referenced reading materials and exercises for each chapter.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <secion id="course">
+        <h1>Our Popular Course</h1>
+        <p>cbhabciabkjcbacjabcjkacbao</p>
+        <div class="course-box">
+            
+            <div class="courses">
+                <img src="images/c1.jpg" alt="">
+                <div class="details">
+                    <span>Updated 1/1/21</span>
+                    <h6>JavaScript Course <i class="fa fa-lock" style="color: black;"></i> <i class="fa fa-check" style="color: green;"></i></h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $43.99
+                </div>
+                <div class="btn">
+                    <a href="" class="blue">Find out</a>
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c1.jpg" alt="">
+                <div class="details">
+                    <span>Updated 1/1/21</span>
+                    <h6>JavaScript Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $43.99
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c1.jpg" alt="">
+                <div class="details">
+                    <span>Updated 1/1/21</span>
+                    <h6>JavaScript Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $43.99
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c1.jpg" alt="">
+                <div class="details">
+                    <span>Updated 1/1/21</span>
+                    <h6>JavaScript Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $43.99
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c1.jpg" alt="">
+                <div class="details">
+                    <span>Updated 1/1/21</span>
+                    <h6>JavaScript Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $43.99
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c1.jpg" alt="">
+                <div class="details">
+                    <span>Updated 1/1/21</span>
+                    <h6>JavaScript Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $43.99
+                </div>
+            </div>
+
+        </div>
+    </secion>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Product</h3>
+            <li>janckancja</li>
+            <li>janckancja</li>
+            <li>janckancja</li>
+            <li>janckancja</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Product</h3>
+            <li>janckancja</li>
+            <li>janckancja</li>
+            <li>janckancja</li>
+            <li>janckancja</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Product</h3>
+            <li>janckancja</li>
+            <li>janckancja</li>
+            <li>janckancja</li>
+            <li>janckancja</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Product</h3>
+            <li>janckancja</li>
+            <li>janckancja</li>
+            <li>janckancja</li>
+            <li>janckancja</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>bviajankjananlcancka</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email">
+                <a href="#" class="yellow">Sub</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright 2023</p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="back-top back-top-show">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <script src="js/function.js"></script>
+</body>
+</html>
